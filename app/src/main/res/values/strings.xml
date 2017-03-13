@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="centerString">Center</string>
+    <string name="leftString">Left</string>
+    <string name="rightString">Right</string>
+    <string name="buttomRowString">bottom_row</string>
+    <string name="textviewDefaultString">Hello</string>
+    <string name="buttonClickMeString">Click Me</string>
+</resources>
