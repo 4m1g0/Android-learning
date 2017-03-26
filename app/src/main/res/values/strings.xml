@@ -6,4 +6,7 @@
     <string name="buttomRowString">bottom_row</string>
     <string name="textviewDefaultString">Hello</string>
     <string name="buttonClickMeString">Click Me</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="print_btn_text">Print!</string>
 </resources>

@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/myButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/buttonClickMeString"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.a4m1g0.testapp.myapplication.topFragment"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/myButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="91dp"
-        android:text="@string/textviewDefaultString" />
+        tools:layout="@layout/fragment_top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.a4m1g0.testapp.myapplication.BottomFragment"
+        android:layout_width="205dp"
+        android:layout_height="205dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        tools:layout="@layout/fragment_bottom" />
+
+
 </RelativeLayout>
