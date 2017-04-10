@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         maintv = (TextView) findViewById(R.id.maintv);
 
+        // INTENT SERVICE
         // Queue first action
         Intent intent = new Intent(getApplicationContext(), MyIntentService.class);
         intent.setAction(MyIntentService.ACTION_SAY_HELLO);
@@ -29,6 +30,12 @@ public class MainActivity extends AppCompatActivity {
         intent = new Intent(getApplicationContext(), MyIntentService.class);
         intent.setAction(MyIntentService.ACTION_SAY_GOODBYE);
         intent.putExtra(MyIntentService.EXTRA_NAME, "Don Jose");
+        startService(intent);
+
+        // NORMAL SERVICE
+        // This service will keep running forever in background.
+        // If the app is killed it is also killed but system will restart it asap due to return START_STICKY; statement
+        intent = new Intent(this, MyService.class);
         startService(intent);
     }
 
